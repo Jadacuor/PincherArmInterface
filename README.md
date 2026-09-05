@@ -61,9 +61,18 @@ roslaunch pincher_arm_moveit_config pincher_arm_moveit.launch sim:=false
 rosrun test_movements Interface.py
 ```
 
-### Sin el brazo físico
+### Sin el brazo físico (simulación)
 
-Cambia `sim:=false` por `sim:=true` en los dos `roslaunch`. Verás el modelo en RViz y la interfaz calculará cinemática directa e inversa; los sliders no tendrán efecto porque el tópico de comandos lo crea el driver real.
+Solo la terminal del *bringup* lleva `sim:=true`; la de MoveIt se deja en `sim:=false`. Así el driver ArbotiX se simula (crea los tópicos de comando, publica `/joint_states` y el `robot_state_publisher`) y MoveIt solo lo visualiza, sin duplicar nodos:
+
+```bash
+roscore
+roslaunch pincher_arm_bringup arm.launch sim:=true
+roslaunch pincher_arm_moveit_config pincher_arm_moveit.launch sim:=false
+rosrun test_movements Interface.py
+```
+
+Los sliders **sí** mueven el modelo en RViz. Si no ves el brazo en RViz, pon el *Fixed Frame* en `arm_base_link` y en el display *RobotModel* marca *Collision Enabled*. El botón de liberar servos no tiene efecto visible en simulación, porque no hay torque real que soltar.
 
 ## Estructura
 
@@ -74,4 +83,4 @@ Cambia `sim:=false` por `sim:=true` en los dos `roslaunch`. Verás el modelo en 
 | `src/pincher_arm/` | URDF, driver y configuración de MoveIt ([fictionlab](https://github.com/fictionlab/pincher_arm), BSD 3-Clause) |
 | `iniciar_proyecto.sh` | Levanta roscore + bringup + MoveIt + interfaz |
 
-Los demás scripts de `scripts/` son pruebas sueltas (lectura de joints, envío de trayectorias, cinemática inversa offline).
+Los scripts de prueba (lectura de joints, envío de trayectorias, cinemática inversa offline) están en `src/test_movements/scripts/experimental/` y no forman parte de la aplicación.

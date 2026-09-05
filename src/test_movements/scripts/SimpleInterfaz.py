@@ -186,7 +186,7 @@ class Ui_MainWindow(object):
 "    }\n"
 "")
         self.Gripper.setMinimum(-260)
-        self.Gripper.setMaximum(180)
+        self.Gripper.setMaximum(0)
         self.Gripper.setOrientation(QtCore.Qt.Horizontal)
         self.Gripper.setObjectName("Gripper")
         self.gridLayout.addWidget(self.Gripper, 0, 1, 1, 1)
@@ -618,7 +618,7 @@ class Ui_MainWindow(object):
         self.LabelElbow.setText(_translate("MainWindow", "Arm Elbow Flex:"))
         self.ButtonGrip.setText(_translate("MainWindow", "OFF"))
         self.label.setText(_translate("MainWindow", "Movement and Reading of Joints"))
-        self.ReEna.setText(_translate("MainWindow", "RELAX"))
+        self.ReEna.setText(_translate("MainWindow", "RELEASE"))
         self.Home.setText(_translate("MainWindow", "HOME"))
         self.label_5.setText(_translate("MainWindow", "z:"))
         self.label_2.setText(_translate("MainWindow", "x:"))
@@ -632,7 +632,7 @@ class Ui_MainWindow(object):
         self.label_15.setText(_translate("MainWindow", "Yo ="))
         self.label_20.setText(_translate("MainWindow", "Inverse Kinematics"))
         self.Calculate.setText(_translate("MainWindow", "Calculate"))
-        self.Star.setText(_translate("MainWindow", "Star"))
+        self.Star.setText(_translate("MainWindow", "Start"))
 
 
 if __name__ == "__main__":

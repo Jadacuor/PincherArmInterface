@@ -274,7 +274,7 @@ QSlider::handle:horizontal {
          <number>-260</number>
         </property>
         <property name="maximum">
-         <number>180</number>
+         <number>0</number>
         </property>
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
@@ -476,7 +476,7 @@ QPushButton:pressed {
 </string>
         </property>
         <property name="text">
-         <string>RELAX</string>
+         <string>RELEASE</string>
         </property>
        </widget>
       </item>
@@ -909,7 +909,7 @@ QPushButton:pressed {
 }</string>
          </property>
          <property name="text">
-          <string>Star</string>
+          <string>Start</string>
          </property>
         </widget>
        </item>

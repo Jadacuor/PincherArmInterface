@@ -300,7 +300,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.Inverse_Y.clear()
         self.Inverse_Z.clear()
         self.Advertencia.setText("...")
-        self.Star.setText("Star")
+        self.Star.setText("Start")
         
         
     
