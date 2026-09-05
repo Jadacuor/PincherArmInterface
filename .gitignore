@@ -1,0 +1,5 @@
+build/
+devel/
+*:Zone.Identifier
+__pycache__/
+*.pyc

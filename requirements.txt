@@ -1,0 +1,6 @@
+# Python 3.8, Ubuntu 20.04. roboticstoolbox-python y spatialmath-python se instalan desde los
+# submódulos en external/ (commits fijados en .gitmodules); las versiones aquí son equivalentes en PyPI.
+PyQt5==5.15.10
+numpy==1.24.4
+roboticstoolbox-python==1.1.0
+spatialmath-python==1.1.9

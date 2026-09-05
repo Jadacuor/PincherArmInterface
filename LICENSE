@@ -1,0 +1,48 @@
+CONTROL CINEMÁTICO ROBOT PHANTOMX
+Versión 1.0 — 2024
+
+Copyright (c) 2024-2026 Universidad de los Llanos (NIT 892000757).
+Todos los derechos reservados.
+
+Autores: Jairo David Cuero Ortega, Juan David Cruz Useche,
+Roberto Andrés Quiceno Walteros.
+Grupo de Investigación EYSI — Universidad de los Llanos.
+
+Obra registrada ante la Dirección Nacional de Derecho de Autor de Colombia,
+Libro-Tomo-Partida 13-107-139, fecha de registro 15 de diciembre de 2025.
+
+TÉRMINOS DE LICENCIA
+
+1. Titularidad. Los derechos patrimoniales sobre este software (código fuente,
+   archivos de interfaz, scripts y documentación asociada) pertenecen a la
+   Universidad de los Llanos. Los derechos morales corresponden a sus autores.
+
+2. Uso permitido. Se autoriza el uso del software con fines académicos,
+   docentes y de investigación al interior de la Universidad de los Llanos y
+   a las personas expresamente autorizadas por ella.
+
+3. Restricciones. No se permite, sin autorización previa, expresa y escrita de
+   la Universidad de los Llanos: (a) la reproducción, distribución o
+   comunicación pública del software o de sus partes; (b) su modificación,
+   traducción o la creación de obras derivadas; (c) su uso con fines
+   comerciales; (d) la cesión o sublicenciamiento a terceros.
+
+4. Componentes de terceros. Este software se ejecuta sobre componentes de
+   terceros que conservan sus propias licencias y titulares, y que NO forman
+   parte de la obra aquí licenciada: ROS Noetic (BSD), arbotix_ros (BSD),
+   pincher_arm (BSD), PyQt5 (GPL v3 / comercial), roboticstoolbox-python (MIT),
+   spatialmath-python (MIT), numpy (BSD) y la librería ax12 de ArbotiX
+   (LGPL 2.1, Copyright (c) 2008-2011 Michael E. Ferguson). El uso de dichos
+   componentes se rige por sus respectivas licencias.
+
+5. Sin garantía. EL SOFTWARE SE ENTREGA "TAL CUAL", SIN GARANTÍA DE NINGÚN
+   TIPO, EXPRESA O IMPLÍCITA, INCLUYENDO SIN LIMITACIÓN GARANTÍAS DE
+   COMERCIALIZACIÓN, IDONEIDAD PARA UN PROPÓSITO PARTICULAR O NO INFRACCIÓN.
+   El software controla un manipulador físico; el usuario asume la
+   responsabilidad por su operación segura conforme al manual de usuario.
+
+6. Legislación aplicable. Esta licencia se rige por la Ley 23 de 1982, la
+   Decisión Andina 351 de 1993 y demás normas vigentes en la República de
+   Colombia sobre derecho de autor.
+
+Contacto: jairo_cuero@unillanos.edu.co
